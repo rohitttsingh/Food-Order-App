@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/black"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="4343dp"
+        android:layout_height="79886dp"
+        android:layout_marginStart="-84dp"
+        android:layout_marginTop="-90dp"
+        android:layout_marginEnd="-80dp"
+        android:layout_marginBottom="-90dp"
+        android:alpha="0.25"
+        android:src="@drawable/bg_login" />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/acme"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Login Page" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/Phone"
+        android:layout_width="889px"
+        android:layout_height="176px"
+        android:layout_gravity="center_horizontal"
+        android:hint="    Phone Number"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="889px"
+        android:layout_height="176px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="5dp"
+        android:hint="     Password"
+        android:inputType="textPassword" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Remember Me"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password ?"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="74dp"/>
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:id="@+id/login"
+        android:layout_margin="15dp"
+        android:layout_width="889px"
+        android:layout_height="176px"
+        android:backgroundTint="@color/teal_200"
+        android:layout_gravity="center_horizontal"
+        android:text="Login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:onClick="gotosignup"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        />
+</LinearLayout>
+
+
+
+</RelativeLayout>

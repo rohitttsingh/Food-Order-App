@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="4343dp"
+        android:layout_height="79886dp"
+        android:layout_marginStart="-84dp"
+        android:layout_marginTop="-90dp"
+        android:layout_marginEnd="-80dp"
+        android:layout_marginBottom="-90dp"
+        android:alpha="0.3"
+        android:src="@drawable/welcombg" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="35dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome To "
+            android:textColor="@color/white"
+            android:fontFamily="@font/acme"
+            android:textSize="140px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:text="Foodie Foo \nWorld"
+            android:textColor="@color/yellow"
+            android:textSize="140px"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurants are known to provide excellent social settings and you could enjoy a wonderful meal amidst friends, family, and great ambiance. Order some very delicious food Now"
+            android:textColor="@color/white"
+            android:textSize="65px"
+            android:textStyle="normal" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btntalk"
+            android:layout_width="889px"
+            android:layout_height="176px"
+            android:textSize="40px"
+            android:text="Lets Talk Food"
+            android:textAllCaps="false"
+            android:onClick="gotoSignup"
+            android:backgroundTint="@color/teal_200"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

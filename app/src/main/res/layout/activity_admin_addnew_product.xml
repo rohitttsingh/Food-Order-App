@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".AdminAddnewProductActivity">
+
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="4343dp"
+        android:layout_height="79886dp"
+        android:layout_marginStart="-84dp"
+        android:layout_marginTop="-90dp"
+        android:layout_marginEnd="-80dp"
+        android:layout_marginBottom="-90dp"
+        android:alpha="0.3"
+        android:src="@drawable/noicebgfood" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Items"
+            android:textColor="@color/white"
+            android:textSize="33dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/acme"
+            android:textStyle="bold"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <ImageView
+            android:id="@+id/select_product_image"
+            android:layout_width="203dp"
+            android:layout_height="214dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_baseline_image_24" />
+
+        <EditText
+            android:id="@+id/productname"
+            android:layout_margin="10dp"
+            android:layout_width="889px"
+            android:layout_height="176px"
+            android:ems="10"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/productdescription"
+            android:layout_margin="10dp"
+            android:minLines="4"
+            android:layout_width="889px"
+            android:layout_height="176px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Description" />
+
+        <EditText
+            android:id="@+id/productcost"
+            android:layout_margin="10dp"
+
+            android:layout_width="889px"
+            android:layout_height="176px"
+            android:ems="10"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Price"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/viewOrder"
+            android:layout_margin="10dp"
+            android:layout_width="889px"
+            android:layout_height="176px"
+            android:backgroundTint="@color/teal_200"
+            android:layout_gravity="center_horizontal"
+            android:text="View Orders" />
+
+        <Button
+            android:id="@+id/addbutton"
+            android:layout_margin="10dp"
+            android:layout_width="889px"
+            android:layout_height="176px"
+            android:backgroundTint="@color/teal_200"
+            android:layout_gravity="center_horizontal"
+            android:text="Add Product" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="Total price ="
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/next_process_btn"
+        android:layout_below="@+id/total_price"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp" />
+
+
+    <Button
+        android:id="@+id/next_process_btn"
+        android:layout_width="match_parent"
+        android:layout_height="186px"
+        android:foregroundGravity="bottom"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:backgroundTint="@color/teal_200"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp" />
+
+</RelativeLayout>
